@@ -1,0 +1,22 @@
+{
+  "ask.text": "Launch usage-based billing for our SaaS platform to increase revenue and improve customer retention while staying within our current budget constraints.",
+  "constraints.json": {
+    "budget_limit": 1000000,
+    "timeline_limit": 18,
+    "team_size_limit": 15
+  },
+  "priors.json": {
+    "market_size": {
+      "type": "lognormal",
+      "parameters": {"mean": 10.0, "std": 0.5}
+    },
+    "conversion_rate": {
+      "type": "beta",
+      "parameters": {"alpha": 2.0, "beta": 20.0}
+    },
+    "price": {
+      "type": "normal",
+      "parameters": {"mean": 100.0, "std": 20.0}
+    }
+  }
+}
